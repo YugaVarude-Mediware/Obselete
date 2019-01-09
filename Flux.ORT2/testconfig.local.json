@@ -1,0 +1,43 @@
+{
+  "AutomationType": "Web", // Please mention the type of automation viz., Web, Mobile, Desktop or MobileWeb
+  "AppUrl": "https://test.aoaprograms.net/QA/Ort2/", //"https://fwcolo.harmonyis.net/QA831", //Menthion the URL of the application based on the environment
+  //"ExternalAppUrl": "https://fwcolo.harmonyis.net/QA831/",
+  //"BrowserType": "saucelabs", //Mention the browser on which you want to run your tests viz., Chrome, IE, Firefox, Safari, Android, IOS. If you want to run on                      new browser please reach out to Team Phobos for support.
+  "BrowserType": "chrome",
+
+  // You can provide application credentials as below to access the application
+  "UserName": "Rchristian",
+  "Password": "P@123456789",
+
+  // Below mentioned are waits which application should use to wait (in seconds) for an element.
+  // Always keep Implicit wait as 10 seconds
+  // You can set page other waits times based on application performace and benchmark application performance
+  "ImplicitWaitTimeout": "10",
+  "PageLoadTimeout": "60",
+  "ScriptTimeout": "60",
+  "SmallWait": "30",
+  "MediumWait": "120",
+  "LargeWait": "300",
+
+  // Below mentioned are detials to store and display log
+  "logFolderPath": "C:\\Documents", // Folder path where you want to store your log
+  "logLevel": "Info", // logLevel can be 'Info', 'Debug', 'Error', 'Warning', 'All' by default it will be 'Info'. If you wish to change you can change it here
+  "logType": "file", // logType can be 'file' or 'console'. If you want to store log into file please choose file, if you wnat to display the same in console choose console.
+
+  //If you want to add any other configuration that is project specific you can add them as key value pairs as above.
+  //For Saucelab
+  //"BrowserName": "Internet Explorer",
+  //"BrowserVersion": "11",
+  "BrowserName": "Chrome",
+  "BrowserVersion": "71",
+  "OS": "Windows 10",
+  "ScreenResolution": "1280x768",
+  "RecordVideo": "true",
+  "RecordScreenshot": "true",
+  "ExtendedDebugging": "true",
+  "CaptureHTML": "true",
+  "SauceUserName": "yuga.varude", //update this value with your sauce username
+  "SauceKey": "36c5f2c5-14cd-473d-9927-aecd7587f4f7" //update this value with your sauce access key
+
+
+}
