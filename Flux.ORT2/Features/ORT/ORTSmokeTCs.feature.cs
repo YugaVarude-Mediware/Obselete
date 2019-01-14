@@ -101,19 +101,6 @@ testRunner.But("User enters following \'report details\'", ((string)(null)), tab
 testRunner.And("User runs report", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 17
 testRunner.Then("Report should be generated in excel file", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("User can contact to support team via contact support")]
-        public virtual void UserCanContactToSupportTeamViaContactSupport()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User can contact to support team via contact support", ((string[])(null)));
-#line 19
-this.ScenarioSetup(scenarioInfo);
-#line 3
-this.FeatureBackground();
 #line 20
 testRunner.Given("User navigates to page \'ContactSupport\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
@@ -135,19 +122,6 @@ testRunner.When("User enters \'support details\' as follows", ((string)(null)), 
 testRunner.And("sends request to support", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 25
 testRunner.Then("Request should be submitted successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("User creates new blank report")]
-        public virtual void UserCreatesNewBlankReport()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User creates new blank report", ((string[])(null)));
-#line 27
-this.ScenarioSetup(scenarioInfo);
-#line 3
-this.FeatureBackground();
 #line 28
 testRunner.Given("User navigates to page \'Reports\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 29
@@ -163,19 +137,6 @@ testRunner.When("User enters following \'details\' to create blank report", ((st
 testRunner.And("User saves report", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 34
 testRunner.Then("Report should be created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("User creates new report via import")]
-        public virtual void UserCreatesNewReportViaImport()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User creates new report via import", ((string[])(null)));
-#line 36
-this.ScenarioSetup(scenarioInfo);
-#line 3
-this.FeatureBackground();
 #line 37
 testRunner.Given("User navigates to page \'Reports\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 38

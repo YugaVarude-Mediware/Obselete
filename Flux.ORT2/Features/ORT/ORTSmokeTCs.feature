@@ -16,7 +16,7 @@ But User enters following 'report details'
 And User runs report
 Then Report should be generated in excel file
 
-Scenario: User can contact to support team via contact support
+#Scenario: User can contact to support team via contact support
 Given User navigates to page 'ContactSupport'
 When User enters 'support details' as follows
 |FirstName|LastName|EmailAddress|Subject|Message|
@@ -24,7 +24,7 @@ When User enters 'support details' as follows
 And sends request to support
 Then Request should be submitted successfully
 
-Scenario: User creates new blank report
+#Scenario: User creates new blank report
 Given User navigates to page 'Reports'
 And tries to access 'New report'
 When User enters following 'details' to create blank report
@@ -33,7 +33,7 @@ When User enters following 'details' to create blank report
 And User saves report
 Then Report should be created
 
-Scenario: User creates new report via import
+#Scenario: User creates new report via import
 Given User navigates to page 'Reports'
 And tries to access 'New report'
 When enter following 'details' to import report
