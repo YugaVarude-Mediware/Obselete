@@ -63,16 +63,6 @@ namespace Flux.ORT2.Features.ORT
             testRunner.CollectScenarioErrors();
         }
         
-        public virtual void FeatureBackground()
-        {
-#line 3
-#line 4
- testRunner.Given("User is logged In \'ORT\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 5
- testRunner.And("User is on ORT landing Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-        }
-        
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Open analysis report")]
         [NUnit.Framework.CategoryAttribute("Smoke")]
@@ -80,29 +70,46 @@ namespace Flux.ORT2.Features.ORT
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Open analysis report", new string[] {
                         "Smoke"});
-#line 8
+#line 6
 this.ScenarioSetup(scenarioInfo);
-#line 3
-this.FeatureBackground();
+#line 7
+testRunner.Given("User is logged In \'ORT\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 8
+testRunner.And("User is on ORT landing Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 9
+testRunner.And("User navigates to page \'Analysis\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 10
-testRunner.Given("User navigates to page \'Analysis\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 11
 testRunner.And("User Opens analysis report \'Table A1 - Selected Information by State and Region\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 12
+#line 11
 testRunner.When("User navigates to Creation page of analysis report", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "FiscalYear1"});
             table1.AddRow(new string[] {
                         "2016"});
-#line 13
+#line 12
 testRunner.But("User enters following \'report details\'", ((string)(null)), table1, "But ");
-#line 16
+#line 15
 testRunner.And("User runs report", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 17
+#line 16
 testRunner.Then("Report should be generated in excel file", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("User can contact to support team via contact support")]
+        [NUnit.Framework.CategoryAttribute("Smoke")]
+        public virtual void UserCanContactToSupportTeamViaContactSupport()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User can contact to support team via contact support", new string[] {
+                        "Smoke"});
+#line 19
+this.ScenarioSetup(scenarioInfo);
 #line 20
-testRunner.Given("User navigates to page \'ContactSupport\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given("User is logged In \'ORT\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 21
+testRunner.And("User navigates to page \'ContactSupport\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                         "FirstName",
@@ -116,30 +123,60 @@ testRunner.Given("User navigates to page \'ContactSupport\'", ((string)(null)), 
                         "ross@mediware.com",
                         "TestSubject",
                         "TestMessage"});
-#line 21
+#line 22
 testRunner.When("User enters \'support details\' as follows", ((string)(null)), table2, "When ");
-#line 24
-testRunner.And("sends request to support", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 25
+testRunner.And("sends request to support", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 26
 testRunner.Then("Request should be submitted successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 28
-testRunner.Given("User navigates to page \'Reports\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("User creates new report")]
+        [NUnit.Framework.CategoryAttribute("Smoke")]
+        public virtual void UserCreatesNewReport()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User creates new report", new string[] {
+                        "Smoke"});
 #line 29
+this.ScenarioSetup(scenarioInfo);
+#line 30
+testRunner.Given("User is logged In \'ORT\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 31
+testRunner.And("User navigates to page \'Reports\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 32
 testRunner.And("tries to access \'New report\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                         "Comments"});
             table3.AddRow(new string[] {
-                        "Creating blank report through automation"});
-#line 30
-testRunner.When("User enters following \'details\' to create blank report", ((string)(null)), table3, "When ");
+                        "Creating report"});
 #line 33
+testRunner.When("User enters following \'details\' to create blank report", ((string)(null)), table3, "When ");
+#line 36
 testRunner.And("User saves report", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 34
-testRunner.Then("Report should be created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 37
-testRunner.Given("User navigates to page \'Reports\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 38
+testRunner.Then("Report should be created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("User creates new report using import")]
+        [NUnit.Framework.CategoryAttribute("Smoke")]
+        public virtual void UserCreatesNewReportUsingImport()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User creates new report using import", new string[] {
+                        "Smoke"});
+#line 40
+this.ScenarioSetup(scenarioInfo);
+#line 41
+testRunner.Given("User is logged In \'ORT\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 42
+testRunner.And("User navigates to page \'Reports\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 43
 testRunner.And("tries to access \'New report\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
@@ -154,11 +191,11 @@ testRunner.And("tries to access \'New report\'", ((string)(null)), ((TechTalk.Sp
                         "OMBUDS_WI_STATE_7019",
                         "10",
                         "Creating report through OMB Import"});
-#line 39
+#line 44
 testRunner.When("enter following \'details\' to import report", ((string)(null)), table4, "When ");
-#line 42
+#line 47
 testRunner.And("User saves report", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 43
+#line 48
 testRunner.Then("Report should be created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -167,3 +204,4 @@ testRunner.Then("Report should be created", ((string)(null)), ((TechTalk.SpecFlo
 }
 #pragma warning restore
 #endregion
+

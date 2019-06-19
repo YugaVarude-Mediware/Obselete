@@ -33,9 +33,19 @@ namespace Flux.ORT2.CommonUtils
             get => Application.NewPage<ORTSmokeTcsPage>();
         }
 
-        //public ORTCommonFunctionsForAnalysis ORTCommonFunctionsForAnalysis
-        //{
-        //    get => Application.NewPage<ORTCommonFunctionsForAnalysis>();
-        //}
+        public ORTAnalysisPage ORTAnalysisPage
+        {
+            get => Application.NewPage<ORTAnalysisPage>();
+        }
+     
+        public ORTCustomerSupportPage ORTCustomerSupportPage
+        {
+            get => Application.NewPage<ORTCustomerSupportPage>();
+        }
+
+        public ORTReportsPage ORTReportsPage
+        {
+            get => Application.NewPage<ORTReportsPage>();
+        }        
     }
 }

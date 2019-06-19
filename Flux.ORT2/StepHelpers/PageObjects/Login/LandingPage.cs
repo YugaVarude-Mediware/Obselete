@@ -14,7 +14,7 @@ namespace Flux.ORT2.StepHelpers.PageObjects.Login
         /// <summary>
         /// This method will switch to landing page
         /// </summary>
-        public void SwitchToLandingPage() => Actions.SwitchToWindow(GlobalData.Get("LandingPageHandle"));
+        //public void SwitchToLandingPage() => Actions.SwitchToWindow(GlobalData.Get("LandingPageHandle"));
         #endregion
     }
 }

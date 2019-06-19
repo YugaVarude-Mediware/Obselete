@@ -130,7 +130,6 @@
   <ItemGroup>
     <Compile Include="AppConstants\ORTConstants.cs" />
     <Compile Include="AppConstants\Enums.cs" />
-    <Compile Include="AppConstants\Test.cs" />
     <Compile Include="CommonUtils\TableExtensions.cs" />
     <Compile Include="CommonUtils\PageFactory.cs" />
     <Compile Include="CommonUtils\GetData.cs" />
@@ -153,8 +152,11 @@
     </Compile>
     <Compile Include="StepHelpers\PageObjects\Login\LandingPage.cs" />
     <Compile Include="StepHelpers\PageObjects\Login\LoginPage.cs" />
+    <Compile Include="StepHelpers\PageObjects\ORT\ORTAnalysisPage.cs" />
     <Compile Include="StepHelpers\PageObjects\ORT\ORTCommonFunctionsForAnalysis.cs" />
-    <Compile Include="StepHelpers\PageObjects\ORT\ORTSmokeTcsPagecs.cs" />
+    <Compile Include="StepHelpers\PageObjects\ORT\ORTCustomerSupportPage.cs" />
+    <Compile Include="StepHelpers\PageObjects\ORT\ORTReportsPage.cs" />
+    <Compile Include="StepHelpers\PageObjects\ORT\ORTSmokeTcsPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

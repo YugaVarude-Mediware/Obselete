@@ -7,7 +7,7 @@
 
   // You can provide application credentials as below to access the application
   "UserName": "Rchristian",
-  "Password": "P@123456789",
+  "Password": "P@12345678",
 
   // Below mentioned are waits which application should use to wait (in seconds) for an element.
   // Always keep Implicit wait as 10 seconds

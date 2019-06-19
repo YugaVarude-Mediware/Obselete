@@ -49,10 +49,18 @@ namespace Flux.ORT2.StepHelpers.CommonPageFunctions
         //        if (mc.ToString() == menu)
         //            return mc;
 
-
         //    return ORTMenu.Default;
         //}
 
+        //public ReportStatus GetReportStatus(string reportStatus)
+        //{
+        //    foreach (ReportStatus mc in Enum.GetValues(typeof(ReportStatus)))
+        //        if (mc.ToString() == reportStatus)
+        //            return mc;
+
+
+        //    return ReportStatus.Default;
+        //}
 
         ///// <summary>
         ///// 
@@ -72,6 +80,7 @@ namespace Flux.ORT2.StepHelpers.CommonPageFunctions
 
         //        case ORTMenu.ContactSupport:
         //            {
+        //                //Actions.SwitchToDefaultFrame();
         //                Actions.Click(lnkCustomerSupport);
         //                Waits.WaitForPageLoad();
         //                break;
@@ -129,6 +138,7 @@ namespace Flux.ORT2.StepHelpers.CommonPageFunctions
 
         //    }
         //}
+
 
     }
 }

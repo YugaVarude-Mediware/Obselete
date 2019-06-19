@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Flux.ORT2.Enums;
 
 namespace Flux.ORT2.CommonUtils
 {
@@ -46,13 +47,13 @@ namespace Flux.ORT2.CommonUtils
         /// <param name="webActions"></param>
         /// <param name="MainMenu"></param>
         /// <param name="SubMenu"></param>
-        public static void ClickMenu(this WebActions webActions, By MainMenu, By SubMenu)
-        {
-            System.Threading.Thread.Sleep(2000);
-            webActions.Click(MainMenu);
-            System.Threading.Thread.Sleep(2000);
-            webActions.Click(SubMenu);
-        }
+        //public static void ClickMenu(this WebActions webActions, By MainMenu, By SubMenu)
+        //{
+        //    System.Threading.Thread.Sleep(2000);
+        //    webActions.Click(MainMenu);
+        //    System.Threading.Thread.Sleep(2000);
+        //    webActions.Click(SubMenu);
+        //}
 
         /// <summary>
         /// This is an common extension method to wait for the APS update progess image to disappear
@@ -245,6 +246,8 @@ namespace Flux.ORT2.CommonUtils
             return InvestigationID;
 
         }
+       
+
         #endregion
     }
 }

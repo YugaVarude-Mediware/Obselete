@@ -13,7 +13,7 @@ namespace Flux.ORT2.Base
         /// <summary>
         /// This method runs once before all feature and initializes the browser instance
         /// </summary>
-        [BeforeFeature]
+        [BeforeScenario]
         public static void ORTOneTimeSetup()
         {
             string browserName = string.Empty;

@@ -40,10 +40,7 @@ namespace Flux.ORT2.StepHelpers.PageObjects
         {
             if (GlobalData.Get("LandingPageHandle") != String.Empty && GlobalData.Get("LandingPageHandle") != null)
             {
-
                 Actions.SwitchToWindow(GlobalData.Get("LandingPageHandle"));
-
-
             }
             else
             {
